@@ -1,0 +1,4 @@
+locust -f locustfile.py --host=http://localhost:8000
+pytest test_server.py
+python server.py --port 8000 --save-path ./photos --host 0.0.0.0
+python server.py --port 8000 --save-path ./photos
